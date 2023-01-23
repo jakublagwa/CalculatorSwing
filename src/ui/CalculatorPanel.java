@@ -15,22 +15,24 @@ public class CalculatorPanel extends JPanel implements ActionListener{
 		num2=-1;
 	}
 	
-	JButton bZero = new JButton("0");
-    JButton bOne = new JButton("1");
-    JButton bTwo = new JButton("2");
-    JButton bThree = new JButton("3");
-    JButton bFour = new JButton("4");
-    JButton bFive = new JButton("5");
-    JButton bSix = new JButton("6");
-    JButton bSeven = new JButton("7");
-    JButton bEight = new JButton("8");
-    JButton bNine = new JButton("9");
-    JButton bAdd = new JButton("+");
-    JButton bSubstract = new JButton("-");
-    JButton bMultiply = new JButton("*");
-    JButton bDivide = new JButton("/");
-    JButton bResult = new JButton("RESULT");
-    JButton bReset = new JButton("RESET");
+	private JButton bZero = new JButton("0");
+    private JButton bOne = new JButton("1");
+    private JButton bTwo = new JButton("2");
+    private JButton bThree = new JButton("3");
+    private JButton bFour = new JButton("4");
+    private JButton bFive = new JButton("5");
+    private JButton bSix = new JButton("6");
+    private JButton bSeven = new JButton("7");
+    private JButton bEight = new JButton("8");
+    private JButton bNine = new JButton("9");
+    private JButton bAdd = new JButton("+");
+    private JButton bSubstract = new JButton("-");
+    private JButton bMultiply = new JButton("*");
+    private JButton bDivide = new JButton("/");
+    private JButton bResult = new JButton("RESULT");
+    private JButton bReset = new JButton("RESET");
+    
+   private JTextField textField = new JTextField();
     
   
     
@@ -52,6 +54,7 @@ public class CalculatorPanel extends JPanel implements ActionListener{
 		this.add(bDivide);
 		this.add(bResult);
 		this.add(bReset);
+		this.add(textField);
 		bOne.setBounds(100, 200, 95, 30);
 	    bTwo.setBounds(210, 200, 95, 30);
 	    bThree.setBounds(320, 200, 95, 30);
@@ -245,6 +248,22 @@ public class CalculatorPanel extends JPanel implements ActionListener{
     		
     	}
     });
+    
+    public void operation() {
+    	switch() {
+    	case:
+    		
+    	}
+    }
+    
+    class MyKeyAdapter extends KeyAdapter{
+    	@Override
+    	public void keyPressed(KeyEvent e) {
+    		switch(e.getKeyCode()) {
+    		
+    		}
+    	}
+    }
 
 }
 
