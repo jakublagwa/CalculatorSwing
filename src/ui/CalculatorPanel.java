@@ -1,5 +1,6 @@
 package ui;
 
+import operations.Operation;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
@@ -249,10 +250,17 @@ public class CalculatorPanel extends JPanel implements ActionListener{
     	}
     });
     
-    public void operation() {
-    	switch() {
-    	case:
-    		
+    
+    public void operation(Operation operation) {
+    	switch(operation) {
+    	case ADD:
+    		break;
+    	case DIVIDE:
+    		break;
+    	case SUBSTRACT:
+    		break;
+    	case MULTIPLY:
+    		break;
     	}
     }
     
